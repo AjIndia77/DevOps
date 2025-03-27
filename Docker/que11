@@ -1,0 +1,6 @@
+11.Create an image from the above running container and push it into DockerHub as a public image.
+--> root@ip-172-31-15-80:~# docker commit condescending_kepler my-apache-mysql
+    root@ip-172-31-15-80:~# docker tag my-apache-mysql ambikaaj/my-apache-mysql:latest
+    root@ip-172-31-15-80:~# docker login
+    Login Succeeded
+    root@ip-172-31-15-80:~# docker push ambikaaj/my-apache-mysql:latest
