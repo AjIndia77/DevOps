@@ -1,2 +1,3 @@
-2.How shall you disable the Networking stock on a container?
---> root@ip-172-31-15-80:~# docker run -d --network none httpd
+# 2.How shall you disable the Networking stock on a container?
+ ```sh
+docker run -d --network none httpd
