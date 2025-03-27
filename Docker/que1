@@ -1,0 +1,2 @@
+1.How do you limit the resources (CPU and memory) that a docker container can use?
+--> root@ip-172-31-15-80:~# docker run -d --cpus="1" -m 100m httpd
