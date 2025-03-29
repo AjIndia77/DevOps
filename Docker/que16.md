@@ -1,8 +1,6 @@
 # 16.Create an image of nginx with the help of Dockerfile and application container run on 8087 port.
-Create a directory name of
-```plaintext
-nginx-docker
-```
+Create a directory name of nginx-docker
+
 ```sh
 mkdir nginx-docker
 cd nginx-docker/
@@ -22,11 +20,7 @@ EXPOSE 80
 # Start NGINX
 CMD ["nginx", "-g", "daemon off;"]  
 ```
-now create an 
-```plaintext
-index.html
-```
-file.
+now create an index.html file
 ```sh
 nano index.html 
 ```
@@ -50,7 +44,5 @@ docker build -t my-nginx .
 docker run -d -p 8087:80 --name nginx-container my-nginx
 curl -I http://localhost:8087
 ```
-and you will see this output
-```plaintext
-HTTP/1.1 200 OK
-```
+and you will see this output like HTTP/1.1 200 OK
+

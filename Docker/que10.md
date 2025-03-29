@@ -1,8 +1,6 @@
 # 10.How can we run 2 services in a single container like Apache and MySQL?
-Create a file with the name of 
-```plaintext
-Dockerfile 
-```
+Create a file with the name of Dockerfile 
+
 ```sh
 vi Dockerfile
 ```
@@ -18,10 +16,8 @@ RUN chmod +x /start.sh
 EXPOSE 80 3306
 CMD ["/start.sh"] 
 ```
-Then create a file name of 
-```plaintext
-start.sh
-```
+Then create a file name of start.sh
+
 ```sh
 vi start.sh
 ```

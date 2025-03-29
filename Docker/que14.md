@@ -11,9 +11,8 @@ ping --version
 apt update && apt install -y iputils-ping
 ```
 To get exit from the last command type
-```plaintext
 Ctrl+p+q 
-```
+
 ```sh
 docker exec -it default-cont ping -c 3 custom-cont
 ```

@@ -21,7 +21,5 @@ See this as a output
 docker run -d -p 8080:80 localhost:5000/my-apache-mysql
 curl -I http://localhost:8080
 ```
-It will give you
-```plaintext
-HTTP/1.1 200 OK
-```
+It will give you like HTTP/1.1 200 OK
+
