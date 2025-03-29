@@ -4,7 +4,7 @@ sudo nano /lib/systemd/system/docker.service
 ```
 then we replace a line with another
 ```sh
-ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock #REPLACE WITH 
+ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock #REPLACE WITH THIS LINE 
 ```
 ```sh
 ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock --containerd=/run/containerd/containerd.sock

@@ -1,3 +1,10 @@
-12. Restart the docker service and now remove all the stopped containers without using the 'rm' command.
---> root@ip-172-31-15-80:~# systemctl restart docker
-    root@ip-172-31-15-80:~# docker container prune
+# 13. Restart the docker service and now remove all the stopped containers without using the 'rm' command.
+By 
+```plaintext
+prune
+``` 
+command we can remove all stopped containers
+```sh
+systemctl restart docker
+docker container prune
+```

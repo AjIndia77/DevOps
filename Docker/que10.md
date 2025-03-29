@@ -1,16 +1,39 @@
-10.How can we run 2 services in a single container like Apache and MySQL?
--->root@ip-172-31-15-80:~# vi Dockerfile [  FROM ubuntu:latest
-                                            # Install Apache and MySQL
-                                            RUN apt-get update && apt-get install -y apache2 mysql-server
-                                            # Copy and set entrypoint script
-                                            COPY start.sh /start.sh
-                                            RUN chmod +x /start.sh
-                                            # Expose ports
-                                            EXPOSE 80 3306
-                                            CMD ["/start.sh"] ]
-  root@ip-172-31-15-80:~# vi start.sh [ #!/bin/bash
-                                        service apache2 start
-                                        service mysql start
-                                        tail -f /dev/null ]
-  root@ip-172-31-15-80:~# docker build -t apache-mysql .
-  root@ip-172-31-15-80:~# docker run -d -p 80:80 -p 3306:3306 apache-mysql
+# 10.How can we run 2 services in a single container like Apache and MySQL?
+Create a file with the name of 
+```plaintext
+Dockerfile 
+```
+```sh
+vi Dockerfile
+```
+And paste the content in the file
+```sh
+FROM ubuntu:latest
+# Install Apache and MySQL
+RUN apt-get update && apt-get install -y apache2 mysql-server
+# Copy and set entrypoint script
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+# Expose ports
+EXPOSE 80 3306
+CMD ["/start.sh"] 
+```
+Then create a file name of 
+```plaintext
+start.sh
+```
+```sh
+vi start.sh
+```
+Paste this content in the file
+```sh
+#!/bin/bash
+service apache2 start
+service mysql start
+tail -f /dev/null
+```
+Now we will build and run the container
+```sh
+docker build -t apache-mysql .
+docker run -d -p 80:80 -p 3306:3306 apache-mysql
+```
