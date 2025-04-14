@@ -43,15 +43,7 @@ This repo contains hands-on projects and notes from my DevOps learning journey, 
 DevOps/
 ├── Docker/
 ├── Terraform/
-├── Ansible/    # (Add this folder if not already present)
+├── Ansible/   
 └── Prometheus/
-
----
-
-### ✅ Additional Suggestions to Improve the Repo
-
-1. **Add an `Ansible/` folder** to match what's written.
-2. **Add screenshots or terminal output logs** inside each folder (`images/` subfolder) — great for visuals!
-3. **Create `.gitignore`** for DevOps projects:
 
 
