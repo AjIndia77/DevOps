@@ -1,12 +1,12 @@
-🚀 Kubernetes Cheat Sheet
-🔹 Basic Concepts
-Cluster: A group of connected computers (nodes) that run applications.
+##🚀 Kubernetes Cheat Sheet
 
-Node: A single computer in a cluster that runs applications.
+🔹 Basic Concepts Cluster: A group of connected computers (nodes) that run applications.
 
-Pod: The smallest unit in Kubernetes that can run one or more containers.
+  Node: A single computer in a cluster that runs applications.
 
-Namespace: A way to divide resources in a cluster for different projects or teams.
+  Pod: The smallest unit in Kubernetes that can run one or more containers.
+
+  Namespace: A way to divide resources in a cluster for different projects or teams.
 
 🔁 Workload Management
 Deployment: Manages a set of identical pods to ensure the correct number are running.
