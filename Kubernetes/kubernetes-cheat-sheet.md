@@ -97,7 +97,7 @@ Init Containers: Run before main containers in a pod.
 
 Sidecar Container: Runs alongside the main container.
 
-🩺 Health Checks
+<h3>🩺 Health Checks</h3>
 Readiness Probe: Checks if a container is ready to accept traffic.
 
 Liveness Probe: Checks if a container is still running and restarts it if needed.
