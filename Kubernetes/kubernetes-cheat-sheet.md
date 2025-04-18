@@ -8,21 +8,21 @@
 
   Namespace: A way to divide resources in a cluster for different projects or teams.
 
-🔁 Workload Management
-Deployment: Manages a set of identical pods to ensure the correct number are running.
+<h4>🔁 Workload Management</h4>
+-Deployment: Manages a set of identical pods to ensure the correct number are running.
 
-ReplicaSet: Ensures a specified number of pod copies are running at all times.
+-ReplicaSet: Ensures a specified number of pod copies are running at all times.
 
-DaemonSet: Ensures a pod runs on all or some nodes.
+-DaemonSet: Ensures a pod runs on all or some nodes.
 
-StatefulSet: Manages stateful applications, keeping track of each pod's identity.
+-StatefulSet: Manages stateful applications, keeping track of each pod's identity.
 
-Job: Runs a task until it completes successfully.
+-Job: Runs a task until it completes successfully.
 
-CronJob: Runs tasks on a scheduled basis.
+-CronJob: Runs tasks on a scheduled basis.
 
-🔌 Networking & Services
-Service: Exposes a set of pods as a network service.
+<h4>🔌 Networking & Services</h4>
+-Service: Exposes a set of pods as a network service.
 
 Ingress: Manages external access to services, usually HTTP.
 
