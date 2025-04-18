@@ -1,4 +1,4 @@
-##🚀 Kubernetes Cheat Sheet
+<h1 align="center">🚀 Kubernetes Cheat Sheet</h1>
 
 🔹 Basic Concepts Cluster: A group of connected computers (nodes) that run applications.
 
