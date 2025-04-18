@@ -8,7 +8,7 @@
 
   Namespace: A way to divide resources in a cluster for different projects or teams.
 
-<h4>🔁 Workload Management</h4>
+<h3>🔁 Workload Management</h3>
 -Deployment: Manages a set of identical pods to ensure the correct number are running.
 
 -ReplicaSet: Ensures a specified number of pod copies are running at all times.
@@ -21,8 +21,8 @@
 
 -CronJob: Runs tasks on a scheduled basis.
 
-<h4>🔌 Networking & Services</h4>
--Service: Exposes a set of pods as a network service.
+<h3>🔌 Networking & Services</h3>
+Service: Exposes a set of pods as a network service.
 
 Ingress: Manages external access to services, usually HTTP.
 
@@ -34,7 +34,7 @@ LoadBalancer Service: Exposes a service externally using a cloud provider’s lo
 
 ClusterIP Service: Exposes a service internally within the cluster.
 
-🧠 Configuration & Storage
+<h3>🧠 Configuration & Storage</h3>
 ConfigMap: Stores configuration data as key-value pairs.
 
 Secret: Stores sensitive data like passwords and tokens.
@@ -47,7 +47,7 @@ PersistentVolumeClaim (PVC): A request for storage by a user.
 
 StorageClass: Describes types of storage in the cluster.
 
-🔧 Core Components
+<h3>🔧 Core Components</h3>
 Kubelet: The agent that runs on each node to manage pods.
 
 Kube-Proxy: Manages network rules on nodes.
@@ -62,7 +62,7 @@ Kubectl: CLI tool to interact with the Kubernetes API.
 
 Helm: Package manager for Kubernetes.
 
-⚙️ Autoscaling & Affinities
+<h3>⚙️ Autoscaling & Affinities</h3>
 Horizontal Pod Autoscaler: Adjusts number of pods based on CPU/memory usage.
 
 Cluster Autoscaler: Adjusts number of nodes in the cluster.
@@ -71,7 +71,7 @@ Affinity / Anti-Affinity: Rules for scheduling pods on specific nodes.
 
 Taints & Tolerations: Prevent or allow pods to run on specific nodes.
 
-🔐 Access & Security
+<h3>🔐 Access & Security</h3>
 Label: Key-value pairs for organizing objects.
 
 Annotation: Metadata attached to objects.
@@ -88,7 +88,7 @@ NetworkPolicy: Controls traffic between pods.
 
 PodSecurityPolicy: Defines security rules for pods.
 
-🔁 Reliability
+<h3>🔁 Reliability</h3>
 PodDisruptionBudget (PDB): Limits the number of pods that can be down during maintenance.
 
 CoreDNS: DNS server for cluster service discovery.
